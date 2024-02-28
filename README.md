@@ -17,7 +17,7 @@
 
    ### [Project](https://chaoyuesong.github.io/REACTO/) | [Paper](https://chaoyuesong.github.io/REACTO/REACTO.pdf)
 <tr>
-    <img src="https://github.com/ChaoyueSong/ChaoyueSong.github.io/blob/gh-pages/files/project/reacto_cvpr2024/reacto_teaser.mp4" width="70%"/>
+    <img src="https://github.com/ChaoyueSong/ChaoyueSong.github.io/blob/gh-pages/files/project/reacto_cvpr2024/reacto_teaser.gif" width="70%"/>
 </tr>
 </div>
 <br />
