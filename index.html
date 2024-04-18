@@ -333,26 +333,31 @@ Existing works employing dynamic neural radiance fields have advanced the modeli
         <!--/ comparison. -->
       
          <!-- comparison. -->
-<!--         <section class="section">
+        <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Optimal transport for 2D-3D matching</h2>
+        <h2 class="title is-3">Method overview</h2>
         <div class="content has-text-justified">
           <p>
-            By registering 2D pixels across different frames with optimal transport, we can refine the bad segmentation and predict the consistent 3D shape of the cat.
+            We model an articulated 3D object from a single video using a shape and appearance model based on
+a canonical Neural Radiance Field (NeRF) and a deformation model for transforming 3D points between the observation space and the
+canonical space. Instead of linear blend skinning or dual quaternion blend skinning designed for human or animal motion modeling, we
+propose Quasi-Rigid Blend Skinning (QRBS) as our deformation model, with the learned quasi-sparse skinning weights, to accurately
+transform 3D points from the observation space to  the canonical space. We visualize the 3 bones for glasses in the canonical space. The
+colors in skinning weights signify the assigned bone for each point.
           </p>
         </div>
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-img">
-              <img id="architecture" src="imgs/moda_ot_demo.jpg" style="width:1000px; margin-top:10px;margin-bottom:-20px;"/>
+              <img id="architecture" src="imgs/method.png" style="width:1000px; margin-top:10px;margin-bottom:-20px;"/>
             </div>
           </div>
         </div>
   </div>
-    </div></section> -->
+    </div></section>
         <!--/ comparison. -->
           
        <!-- comparison. -->
@@ -361,7 +366,7 @@ Existing works employing dynamic neural radiance fields have advanced the modeli
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Ablation study on texture filtering</h2>
+        <h2 class="title is-3">Ablation study</h2>
         <div class="content has-text-justified">
           <p>
             We show the effectiveness of our proposed Quazi-rigid blend skinning (QRBS) by comparing it to other deformation models such as Displacement, Real-NVP, and rigid skinning. Additionally, we compare different rigging strategies, specifically our method of rigging on bones versus rigging on joints.
