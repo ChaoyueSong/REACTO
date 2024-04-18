@@ -123,15 +123,15 @@
                   <span>Paper</span>
                 </a>
               </span> -->
-<!--               <span class="link-block">
-                <a href="https://arxiv.org/abs/2304.08279"
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.11151"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
                 
               <!-- Video Link. -->
 <!--               <span class="link-block">
@@ -177,7 +177,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser"  autoplay muted loop playsinline height="100%">
-        <source src="./imgs/teaser.mp4"
+        <source src="./img/reacto_teaser.mp4"
                 type="video/mp4"> 
       </video>
       <h2 class="subtitle has-text-centered">
@@ -243,20 +243,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In this paper, we focus on the challenges of modeling deformable 3D objects from casual videos.
-            With the popularity of neural radiance fields (NeRF), many works extend it to dynamic scenes with a canonical NeRF 
-            and a deformation model that achieves 3D point transformation between the observation space and the canonical space. 
-            Recent works rely on linear blend skinning (LBS) to achieve the canonical-observation transformation. However, 
-            the linearly weighted combination of rigid transformation matrices is not guaranteed to be rigid. As a matter of fact,
-            unexpected scale and shear factors often appear. In practice, using LBS as the deformation model can always lead to 
-            skin-collapsing artifacts for bending or twisting motions.
+            In this paper, we address the challenge of reconstructing general articulated 3D objects from a single video.
+Existing works employing dynamic neural radiance fields have advanced the modeling of articulated objects like humans and animals from videos, 
+            but face challenges with piece-wise rigid general articulated objects due to limitations in their deformation models. 
           </p>
           <p>
-            To solve this problem, we propose neural dual quaternion blend skinning (NeuDBS) to achieve 3D point deformation, 
-            which can perform rigid transformation without skin-collapsing artifacts. Besides, we introduce a texture filtering
-            approach for texture rendering that effectively minimizes the impact of noisy colors outside target deformable objects. 
-            Extensive experiments on real and synthetic datasets show that our approach can reconstruct 3D models for humans and 
-            animals with better qualitative and quantitative performance than state-of-the-art methods.
+            To tackle this, we propose Quasi-Rigid Blend Skinning, a novel deformation model that enhances the rigidity of each part while maintaining 
+            flexible deformation of the joints. Our primary insight combines three distinct approaches: 1) an enhanced bone rigging system for improved 
+            component modeling, 2) the use of quasi-sparse skinning weights to boost part rigidity and reconstruction fidelity, and 3) the application of 
+            geodesic point assignment for precise motion and seamless deformation. Our method outperforms previous works in producing higher-fidelity 3D 
+            reconstructions of general articulated objects, as demonstrated on both real and synthetic datasets.
           </p>
         </div>
       </div>
@@ -283,7 +279,7 @@
 </section>
   
 <!-- Highlights. -->
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered" style="margin-top: 10px; margin-bottom: 0px;">
       <div class="column is-four-fifths">
@@ -300,11 +296,11 @@
         </div>
       </div>
     </div>
-</section>
+</section> -->
   
     
        <!-- comparison. -->
-      <section class="section">
+<!--       <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -333,11 +329,11 @@
           </p>
         </div>
       </div>
-    </div></section>
+    </div></section> -->
         <!--/ comparison. -->
       
          <!-- comparison. -->
-        <section class="section">
+<!--         <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -356,11 +352,11 @@
           </div>
         </div>
   </div>
-    </div></section>
+    </div></section> -->
         <!--/ comparison. -->
           
        <!-- comparison. -->
-        <section class="section">
+<!--         <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -383,11 +379,11 @@
           </video>
         </div>
   </div>
-    </div></section>
+    </div></section> -->
         <!--/ comparison. -->
       
        <!-- comparison. -->
-       <section class="section">
+<!--        <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -410,11 +406,11 @@
           </video>
         </div>
   </div>
-    </div></section>
+    </div></section> -->
         <!--/ comparison. -->
 
     <!-- Concurrent Work. -->
-    <section class="section">
+<!--     <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -440,21 +436,20 @@
     <!--/ Concurrent Work. -->
 
   </div>
-</section>
+</section> -->
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{song2023moda,
-  title={MoDA: Modeling Deformable 3D Objects from Casual Videos},
-  author={Song, Chaoyue and Chen, Tianyi and Chen, Yiwen and Wei, Jiacheng and Foo, Chuan Sheng and Liu, Fayao and Lin, Guosheng},
-  journal={arXiv preprint arXiv:2304.08279},
-  year={2023}
+    <pre><code>@article{song2024reacto,
+  title={REACTO: Reconstructing Articulated Objects from a Single Video},
+  author={Chaoyue Song and Jiacheng Wei and Chuan-Sheng Foo and Guosheng Lin and Fayao Liu},
+  journal={arXiv preprint arXiv:2404.11151},
+  year={2024}
 }</code></pre>
   </div>
 </section> -->
-
 
 <footer class="footer">
   <div class="container">
