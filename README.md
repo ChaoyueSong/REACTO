@@ -22,12 +22,31 @@
 </div>
 <br />
 
+### Installation
+
+```bash
+git clone git@github.com:ChaoyueSong/REACTO.git --recursive
+cd REACTO
+conda env create -f environment.yml
+conda activate reacto
+bash scripts/install-deps.sh
+```
+Our environment is the same as [Lab4D](https://github.com/lab4d-org/lab4d), check [here](https://lab4d-org.github.io/lab4d/qa.html) for some installation issues.
+
 ### Data preparation
-The preprocessed data used in the paper is available [here](https://huggingface.co/datasets/chaoyue7/reacto_data), you can check the [data format](https://lab4d-org.github.io/lab4d/tutorials/arbitrary_video.html). To preprocess your own data, please refer to this [tutorial](https://lab4d-org.github.io/lab4d/tutorials/preprocessing.html). 
+The preprocessed data used in the paper is available [here](https://huggingface.co/datasets/chaoyue7/reacto_data), you can check the [data format](https://lab4d-org.github.io/lab4d/tutorials/arbitrary_video.html). To preprocess your own video, you can run:
+```bash
+# Args: sequence name, number of object, text prompt (segmentation, use other for non-human/non-quad), category from {human, quad, arti, other}, gpu id
+python scripts/run_preprocess.py real_laptop 1 other arti "0"
+```
+We modified the data processing code in Lab4D so that it can also be used for videos containing multiple objects. Both text prompt and category can be lists separated by commas. For example, when there are multiple objects in the video, you can run:
+```bash
+python scripts/run_preprocess.py birds-over-river 3 other,other,other other,quad,human "0"
+```
 
 ### TODO
-- [x] Release the dataset.
-- [ ] Release code.
+- [x] Release the dataset and data preprocess codes.
+- [ ] Release training code.
 - [ ] Release the pretrained models.
 
 ### Citation

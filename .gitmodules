@@ -1,0 +1,3 @@
+[submodule "preprocess/third_party/detectron2"]
+	path = preprocess/third_party/detectron2
+	url = https://github.com/facebookresearch/detectron2.git
