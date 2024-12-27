@@ -25,7 +25,7 @@
 ### Installation
 
 ```bash
-git clone git@github.com:ChaoyueSong/REACTO.git --recursive
+git clone https://github.com/ChaoyueSong/REACTO.git --recursive
 cd REACTO
 conda env create -f environment.yml
 conda activate reacto
