@@ -15,15 +15,18 @@
   
    ### CVPR 2024
 
-   ### [Project](https://chaoyuesong.github.io/REACTO/) | [Paper](https://arxiv.org/abs/2404.11151) | [Video](https://www.youtube.com/watch?v=6f-lyqLMbRc) 
+   ### [Project](https://chaoyuesong.github.io/REACTO/) | [Paper](https://arxiv.org/abs/2404.11151) | [Video](https://www.youtube.com/watch?v=6f-lyqLMbRc) | [Data](https://huggingface.co/datasets/chaoyue7/reacto_data) 
 <tr>
     <img src="https://github.com/ChaoyueSong/ChaoyueSong.github.io/blob/gh-pages/files/project/reacto_cvpr2024/reacto_teaser.gif" width="70%"/>
 </tr>
 </div>
 <br />
 
+### Data preparation
+The preprocessed data used in the paper is available [here](https://huggingface.co/datasets/chaoyue7/reacto_data), you can check the [data format](https://lab4d-org.github.io/lab4d/tutorials/arbitrary_video.html). To preprocess your own data, please refer to this [tutorial](https://lab4d-org.github.io/lab4d/tutorials/preprocessing.html). 
+
 ### TODO
-- [ ] Release the dataset.
+- [x] Release the dataset.
 - [ ] Release code.
 - [ ] Release the pretrained models.
 
